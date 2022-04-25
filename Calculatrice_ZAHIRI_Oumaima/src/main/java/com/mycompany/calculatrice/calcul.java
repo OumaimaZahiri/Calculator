@@ -76,9 +76,6 @@ public class calcul {
                     else {parcours=str.substring(i,i+1);}                    
         }
         
-        
-        System.out.println("term2 : " + term2);
-        
         // on continue le parcours jusqu'à ce qu'il n y ait plus de caractères (l'utilisateur peut donc effectuer le nombre d'opérations qu'il souhaite
         // sans avoir besoin de taper entrée ou cliquer sur le bouton enter.
         
@@ -118,7 +115,6 @@ public class calcul {
                     p.show();
                     return "Error";
                 }
-                System.out.println("term3 : " + term2);
         }
         
         // maintenant qu'on a défini les deux termes de l'opération, on passe par une fonction qui calcule directement le résultat (calculate)
@@ -131,9 +127,7 @@ public class calcul {
         
         if(result.substring(result.length()-2, result.length()).equals(".0")) {
         	result=result.substring(0, result.length()-2);
-        }
-              
-        System.out.println(result);        
+        }      
             
         return result.replace('.',',');
     }

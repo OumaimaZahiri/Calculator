@@ -82,7 +82,6 @@ public class Interface extends javax.swing.JFrame {
         modulo = new javax.swing.JButton();
         clear = new javax.swing.JButton();
         mult = new javax.swing.JButton();
-        sc = new javax.swing.JButton();
         ans = new javax.swing.JButton();
         text = new javax.swing.JTextField();
         
@@ -115,7 +114,6 @@ public class Interface extends javax.swing.JFrame {
         modulo.setText("%");
         clear.setText("Clear");
         mult.setText("x");
-        sc.setText("Scientific Mode");
         ans.setText("ANS");
         text.setText("");
         power.setText("^");
@@ -139,7 +137,6 @@ public class Interface extends javax.swing.JFrame {
         button9.addActionListener(l);
         coma.addActionListener(l);
         clear.addActionListener(l);
-        sc.addActionListener(l);
         modulo.addActionListener(l);
         plus.addActionListener(l);
         minus.addActionListener(l);
@@ -180,7 +177,6 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(sc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
@@ -217,8 +213,7 @@ public class Interface extends javax.swing.JFrame {
                 .addComponent(text, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(clear)
-                    .addComponent(sc))
+                    .addComponent(clear))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(mult)
